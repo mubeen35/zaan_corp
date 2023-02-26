@@ -1,0 +1,219 @@
+.as_container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu {
+    position: absolute;
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 12px 24px rgba(174, 178, 193, 0.2));
+    border-radius: 8px;
+    z-index: 10;
+    border: 1px solid rgba(7, 15, 33, 0.1);
+    width: 297px;
+    height: 600px;
+    right: 3px;
+}
+
+.pin_menu {
+    position: absolute;
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 12px 24px rgba(174, 178, 193, 0.2));
+    border-radius: 8px;
+    z-index: 10;
+    border: 1px solid rgba(7, 15, 33, 0.1);
+    width: 297px;
+    height: 600px;
+    right: 5px;
+}
+
+.close_icon {
+    opacity: 0.7;
+}
+
+.as_sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(7, 15, 33, 0.1);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.as_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgba(7, 15, 33, 0.1);
+    padding: 10px;
+}
+
+.as_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(7, 15, 33, 0.1);
+    border-radius: 6px;
+}
+
+.as_body {
+    display: flex;
+    flex-direction: column;
+    background: rgba(7, 15, 33, 0.04);
+    overflow-y: auto;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 483px;
+    padding: 5px;
+}
+
+.as_body::-webkit-scrollbar {
+    width: 8px;
+    margin-left: 3px;
+}
+
+.as_body::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+
+.as_body::-webkit-scrollbar-thumb {
+    background: #abaeb5;
+    opacity: 0.2;
+    border-radius: 34px;
+    height: 10px;
+}
+
+.archive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    cursor: pointer;
+}
+
+.snooze {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-left: 5px;
+    padding: 10px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    cursor: pointer;
+}
+
+.snooze_active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-left: 5px;
+    padding: 10px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    background: #6248FF;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.archive_active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    background: #6248FF;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.ar_icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.sn_icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+
+}
+
+.search_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 35.95px;
+}
+
+.searchfield {
+    border: 0;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.searchfield:focus {
+    outline: none;
+}
+
+.search_icon {
+    opacity: 0.6;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.pinned {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+}
+
+.pin_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 5px;
+    border-bottom: 1px solid rgba(7, 15, 33, 0.04);
+}
+
+.pin_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.pin_body {
+    display: flex;
+    flex-direction: column;
+    background: rgba(7, 15, 33, 0.04);
+    overflow-y: auto;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    height: 493px;
+    padding: 5px;
+}

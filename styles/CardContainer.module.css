@@ -1,3 +1,7 @@
+.dropdown {
+    width: 100%;
+}
+
 .card_container {
     display: flex;
     flex-direction: column;
@@ -7,6 +11,7 @@
     background: rgba(7, 15, 33, 0.04);
     border-radius: 8px;
     height: max-content;
+    position: relative;
 }
 
 .title {
@@ -33,8 +38,7 @@
 
 .icn2 {
     margin-top: 5px;
-    opacity: 0.5;
-
+    opacity: 0.3;
 }
 
 .card_no {
@@ -97,6 +101,7 @@
     background: rgba(7, 15, 33, 0.04);
     border: 1px solid rgba(7, 15, 33, 0.1);
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .btn_txt {
@@ -109,4 +114,70 @@
 .btn_icon {
     color: #0E8CFF;
     margin-right: 5px;
+}
+
+.add_card_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 216px;
+    border-top: 1px solid #0E8CFF;
+    position: relative;
+}
+
+.add_card_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 216px;
+}
+
+.add_card_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.add_card_body_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+}
+
+.textfield {
+    background: #FFFFFF;
+    width: 200px;
+    height: 57px;
+    border: 1px solid #0E8CFF;
+    border-radius: 8px;
+}
+
+.textfield:focus {
+    outline: none;
+    border: 1px solid #0E8CFF;
+
+}
+
+.close_icn {
+    cursor: pointer;
+}
+
+.new_add {
+    padding: 7px 12px;
+    gap: 4px;
+    width: 53px;
+    height: 34px;
+    background: #0E8CFF;
+    border-radius: 6px;
+    border: 0;
+    color: #FFFFFF;
 }

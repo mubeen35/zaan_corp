@@ -41,17 +41,15 @@
     gap: 4px;
 }
 
-/* .img1 {
-    background: url('/Workflow1.png') no-repeat;
-    width: 15px;
-    height: 15px;
+.img1:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
-.img1:hover {
-    background: url('/Workflow2.png');
-} */
+.img:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
 
-.w_btn {
+.w_btn:hover {
     background: #0E8CFF;
 }
 

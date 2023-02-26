@@ -1,0 +1,139 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 40px 200px;
+}
+
+.menu {
+    position: absolute;
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+    right: 35px;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 12px 24px rgba(174, 178, 193, 0.2));
+    border-radius: 8px;
+    z-index: 10;
+    border: 1px solid rgba(7, 15, 33, 0.1);
+}
+
+.menu2 {
+    position: absolute;
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+    top: 30px;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 12px 24px rgba(174, 178, 193, 0.2));
+    border-radius: 8px;
+    z-index: 10;
+    border: 1px solid rgba(7, 15, 33, 0.1);
+}
+
+.views {
+    position: absolute;
+    list-style-type: none;
+    margin-top: 5px;
+    padding: 0;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 12px 24px rgba(174, 178, 193, 0.2));
+    border-radius: 8px;
+    z-index: 10;
+    border: 1px solid rgba(7, 15, 33, 0.1);
+    top: 130px;
+    right: 198px;
+    width: 369px;
+}
+
+.sort_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 238px;
+    height: 50px;
+    border-bottom: 1px solid rgba(7, 15, 33, 0.1);
+
+}
+
+.views_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgba(7, 15, 33, 0.1);
+}
+
+.sort_left {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    gap: 6px;
+    margin-left: 20px;
+}
+
+.sort_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sort_icon {
+    opacity: o.6;
+}
+
+.close_icon {
+    opacity: 0.4;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.txt {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #070F21;
+}
+
+.options {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #070F21;
+    opacity: 0.7;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 36px;
+    margin: 0;
+}
+
+.options:hover {
+    background: rgba(7, 15, 33, 0.04);
+}
+
+.sub_option:hover {
+    background: rgba(7, 15, 33, 0.04);
+}
+
+.option_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.sub_option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 16px;
+}
+
+.icn {
+    opacity: 0.5;
+}
