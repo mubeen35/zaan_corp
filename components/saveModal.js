@@ -12,7 +12,7 @@ const SaveModal = ({ onClose }) => {
                 </div>
                 <div className={styles.save_modal_body}>
                     <span className={styles.content}>
-                        view Name
+                        View Name
                     </span>
                     <div className={styles.color_picker}>
                         <input type={'text'} className={styles.in} placeholder='Enter Name' />
