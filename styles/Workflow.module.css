@@ -62,6 +62,22 @@
     background: #f803fc;
 }
 
+.w_btn {
+    cursor: pointer;
+}
+
+.btn1 {
+    cursor: pointer;
+}
+
+.btn2 {
+    cursor: pointer;
+}
+
+.btn3 {
+    cursor: pointer;
+}
+
 @media only screen and (max-width:550px) {
     .r_container {
         margin-top: 18px;
