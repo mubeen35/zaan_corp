@@ -137,3 +137,20 @@
 .icn {
     opacity: 0.5;
 }
+
+@media only screen and (max-width:550px) {
+    .views {
+        position: absolute;
+        list-style-type: none;
+        margin-top: 5px;
+        padding: 0;
+        background: #FFFFFF;
+        filter: drop-shadow(0px 12px 24px rgba(174, 178, 193, 0.2));
+        border-radius: 8px;
+        z-index: 10;
+        border: 1px solid rgba(7, 15, 33, 0.1);
+        left: 80px;
+        top: 300px;
+    }
+
+}

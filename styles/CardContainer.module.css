@@ -12,6 +12,7 @@
     border-radius: 8px;
     height: max-content;
     position: relative;
+    max-width: 220px;
 }
 
 .title {
@@ -180,4 +181,16 @@
     border-radius: 6px;
     border: 0;
     color: #FFFFFF;
+}
+
+@media only screen and (max-width:550px) {
+    .card_container {
+        max-width: 220px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 }

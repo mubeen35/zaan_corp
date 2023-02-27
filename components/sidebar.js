@@ -1,6 +1,7 @@
 import styles from '@/styles/Layout.module.css';
 import Image from "next/image";
 import { useState } from 'react';
+import Status from './statusDot';
 
 const Sidebar = () => {
 
@@ -21,7 +22,8 @@ const Sidebar = () => {
         <div onClick={(e) => handleCollapse(e, false)} className={collapse ? styles.collapse : styles.sidebar}>
             <div className={styles.left_head}>
                 <div className={styles.top}>
-                    <Image src='/Vector.png' width={14} height={14} />
+                    {/* <Image src='/Vector.png' width={14} height={14} /> */}
+                    <Status color={'#27E1BF'} />
                     <select name="ZaanCorp" className={collapse ? styles.d_none : styles.company_name}>
                         <option value="Zaan Corp">Zaan Corp</option>
                         <option value="Zaan Corp2">Zaan Corp2</option>

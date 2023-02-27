@@ -1,11 +1,11 @@
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 0.5fr 3fr;
-    grid-template-rows: 0.3fr 4fr;
-    grid-template-areas: 'sidebar nav'
-        'sidebar main';
-    background: #F6F6FF;
+    grid-template-columns: 0.8fr 2.1fr 2.1fr;
+    grid-template-rows: 0.3fr 0.2fr 8fr;
+    grid-template-areas: 'sidebar nav nav'
+        'sidebar action_bar action_bar'
+        'sidebar main main';
     overflow-y: auto;
 }
 
@@ -85,6 +85,10 @@
     color: #070F21;
 }
 
+.company_name:focus {
+    outline: none;
+}
+
 .top {
     display: flex;
     flex-direction: row;
@@ -145,22 +149,27 @@
 .content {
     background: #FFFFFF;
     grid-area: main;
-    display: grid;
-    grid-template-rows: 0.3fr 3fr;
+    background: #F6F6FF;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 18px 32px;
+    position: relative;
 
 }
 
 .action_bar {
-    left: 270px;
-    top: 76px;
     background: #FFFFFF;
     border-bottom: 1px solid #EBECED;
+    grid-area: action_bar;
+}
+
+.sub_action_bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 18px 30px;
-
 }
 
 .main {
@@ -168,7 +177,8 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
-    padding: 18px 30px;
+    padding: 18px 32px;
+    position: relative;
 }
 
 
@@ -180,15 +190,24 @@
     gap: 12px;
 }
 
+.side_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+    gap: 10px;
 
+}
 
 .side_btn {
     background: #0E8CFF;
     width: 30px;
     height: 30px;
-    position: fixed;
-    right: 0;
-    top: 360px;
     border: 0;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
@@ -199,11 +218,56 @@
     background: #6248FF;
     width: 30px;
     height: 30px;
-    position: fixed;
-    right: 0;
-    top: 400px;
     border: 0;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+
+}
+
+@media only screen and (max-width:550px) {
+    .container {
+        grid-template-columns: 0.2fr 6fr;
+        grid-template-rows: 1fr 1fr 8fr;
+        grid-template-areas: 'sidebar nav'
+            'sidebar action_bar'
+            'sidebar main';
+        width: max-content;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .sub_action_bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+        padding-top: 0;
+    }
+
+    .sidebar {
+        background: #FFFFFF;
+        grid-area: sidebar;
+        border-right: 1px solid #EBECED;
+        display: flex;
+        flex-direction: column;
+        width: 65px;
+    }
+
+    .sidebar_title {
+        display: none;
+    }
+
+    .company_name {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
 
 }

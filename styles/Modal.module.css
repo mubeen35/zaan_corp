@@ -16,7 +16,9 @@
     height: 248px;
     background-color: #FFFFFF;
     border-radius: 6px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .close {
@@ -39,7 +41,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 100px;
 }
 
 .modal_footer {
@@ -48,7 +50,6 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    height: 50px;
     padding: 10px;
     gap: 10px;
 }
@@ -62,11 +63,12 @@
     padding: 10px;
     border-top: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-    height: 80px;
+    height: 248px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 
 .delete_button {
@@ -86,4 +88,77 @@
     border-radius: 8px;
     border: 1px solid rgba(7, 15, 33, 0.05);
     cursor: pointer;
+}
+
+.save_modal_content {
+    width: 492px;
+    height: 364px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.save_modal_body {
+    padding: 10px;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.color_picker {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid rgba(7, 15, 33, 0.1);
+    border-radius: 6px;
+    width: 100%;
+    height: 35px;
+}
+
+.in {
+    border: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.in:focus {
+    outline: none;
+}
+
+.btn {
+    border: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.clr {
+    border: 0;
+}
+
+
+.chevron {
+    margin-top: 7px;
+    opacity: 0.6;
+}
+
+@media only screen and (max-width:550px) {
+    .modal_content {
+        width: 350px;
+        height: 248px;
+        background-color: #FFFFFF;
+        border-radius: 6px;
+
+    }
 }

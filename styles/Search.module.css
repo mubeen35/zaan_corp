@@ -24,3 +24,13 @@
 .search_field:focus {
     outline: none;
 }
+
+@media only screen and (max-width:550px) {
+    .search_container {
+        width: 268px;
+    }
+
+    .search_field {
+        width: 225px;
+    }
+}

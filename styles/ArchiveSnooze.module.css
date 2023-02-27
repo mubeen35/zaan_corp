@@ -33,6 +33,16 @@
     right: 5px;
 }
 
+@media only screen and (max-width:550px) {
+    .pin_menu {
+        left: 1px;
+    }
+
+    .menu {
+        left: 1px;
+    }
+}
+
 .close_icon {
     opacity: 0.7;
 }

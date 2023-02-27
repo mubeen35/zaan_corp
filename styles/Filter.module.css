@@ -155,3 +155,9 @@
 .icn2 {
     opacity: 0.5;
 }
+
+@media only screen and (max-width:550px) {
+    .menu {
+        right: 35px;
+    }
+}

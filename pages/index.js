@@ -30,33 +30,36 @@ export default function Home() {
       </Head>
       <Sidebar />
       <Navbar />
-      <div className={styles.content}>
-        <div className={styles.action_bar}>
+      <div className={styles.action_bar}>
+        <div className={styles.sub_action_bar}>
           <WorkflowBar />
         </div>
-        <main className={styles.main}>
-          <CardContainer title={'Backlog'} cardNo={backlog.length} >
-            {backlog.map(i => (<Card key={i.title} {...i} />))}
-          </CardContainer>
-          <CardContainer title={'To Do'} cardNo={toDo.length} >
-            {toDo.map(i => (<Card key={i.title} {...i} />))}
-          </CardContainer>
-          <CardContainer title={'In Process'} cardNo={35} >
-            {inProcess.map(i => (<Card key={i.title} {...i} />))}
-          </CardContainer>
-          <CardContainer title={'In Review'} cardNo={5} >
-            {inReview.map(i => (<Card key={i.title} {...i} />))}
-          </CardContainer>
-          <CardContainer title={'Completed'} cardNo={1} >
-            {completed.map(i => (<Card key={i.title} {...i} />))}
-          </CardContainer>
+      </div>
+      <div className={styles.content}>
+        <CardContainer title={'Backlog'} cardNo={backlog.length} >
+          {backlog.map(i => (<Card key={i.title} {...i} />))}
+        </CardContainer>
+        <CardContainer title={'To Do'} cardNo={toDo.length} >
+          {toDo.map(i => (<Card key={i.title} {...i} />))}
+        </CardContainer>
+        <CardContainer title={'In Process'} cardNo={35} >
+          {inProcess.map(i => (<Card key={i.title} {...i} />))}
+        </CardContainer>
+        <CardContainer title={'In Review'} cardNo={5} >
+          {inReview.map(i => (<Card key={i.title} {...i} />))}
+        </CardContainer>
+        <CardContainer title={'Completed'} cardNo={1} >
+          {completed.map(i => (<Card key={i.title} {...i} />))}
+        </CardContainer>
+        <div className={styles.side_container}>
           <button type='button' className={styles.side_btn}>
             <Image src='/Checklist.png' width={18} height={18} />
           </button>
           <button type='button' className={styles.side_btn2}>
             <Image src='/List.png' width={18} height={18} />
           </button>
-        </main>
+        </div>
+
       </div>
 
     </>

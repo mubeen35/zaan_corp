@@ -3,9 +3,19 @@ import Image from "next/image";
 import Ticker from './ticker';
 import Button from './iconButton';
 import Search from './searchBar';
+import SaveModal from './saveModal';
+import { useState } from 'react';
+
 const Navbar = () => {
+    const [open, setOpen] = useState(false);
+
+    const handleModal = (e) => {
+        e.stopPropagation();
+        setOpen(!open);
+    }
     return (
         <nav className={styles.nav}>
+            {open && <SaveModal onClose={handleModal} />}
             <div className={styles.nav_container}>
                 <div className={styles.left_container}>
                     <Image className={styles.dp} src={'/user_1.jpg'} width={30} height={30} />
@@ -16,10 +26,12 @@ const Navbar = () => {
                     <button type='button' className={styles.button}>
                         <Image src='/Arrow Chevron.png' width={20} height={20} />
                     </button>
+
                 </div>
-                <Button color="#FFFFFF" icon="/Suggestions.png" width='40px' height='40px' iconWidth='24px' iconHeight='24px' />
                 <div className={styles.middle_container}>
-                    <Button color="#0E8CFF" icon="/Plus.png" width='40px' height='40px' iconWidth='22px' iconHeight='22px' />
+                    <Button color="#FFFFFF" icon="/Suggestions.png" width='40px' height='40px' iconWidth='24px' iconHeight='24px' />
+
+                    <Button onClick={handleModal} color="#0E8CFF" icon="/Plus.png" width='40px' height='40px' iconWidth='22px' iconHeight='22px' />
                     <Search />
                 </div>
                 <div className={styles.right_container}>
