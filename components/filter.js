@@ -15,8 +15,8 @@ const Filter = ({ iconBased }) => {
 
     return (
         <div className="dropdown">
-            {!iconBased && <Button onClick={handleOpen} color="#FFFFFF" icon="/Filter.png" text='Filter' width='81px' height='36px' iconWidth='16px' iconHeight='16px' />}
-            {iconBased && <Image onClick={handleOpen} className={styles.icn2} src='/Filter.png' width={12} height={12} />}
+            {!iconBased && <Button onClick={handleOpen} color="#FFFFFF" icon="/liter.png" text='Filter' width='81px' height='36px' iconWidth='16px' iconHeight='16px' />}
+            {iconBased && <Image onClick={handleOpen} className={styles.icn2} src='/liter.png' width={12} height={12} />}
             {open ? (
                 <div className={styles.menu}>
                     <div className={styles.filter_header}>

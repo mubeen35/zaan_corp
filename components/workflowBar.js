@@ -50,7 +50,7 @@ const WorkflowBar = () => {
                 {/* <Button color="#FFFFFF" icon="/Pinned.png" width='36px' height='36px' iconWidth='20px' iconHeight='20px' /> */}
                 {/* <Button color="#FFFFFF" icon="/double file.png" width='36px' height='36px' iconWidth='20px' iconHeight='20px' /> */}
                 {/* <Button color="#FFFFFF" icon="/save.png" text='Views' width='74px' height='36px' iconWidth='16px' iconHeight='16px' /> */}
-                {/* <Button color="#FFFFFF" icon="/Filter.png" text='Filter' width='74px' height='36px' iconWidth='16px' iconHeight='16px' /> */}
+                {/* <Button color="#FFFFFF" icon="/liter.png" text='Filter' width='74px' height='36px' iconWidth='16px' iconHeight='16px' /> */}
                 {/* <Button color="#FFFFFF" icon="/Sort by.png" text='Sort by' width='81px' height='36px' iconWidth='16px' iconHeight='16px' /> */}
                 <Pinned />
                 <ArchiveSnooze />
