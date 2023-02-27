@@ -21,7 +21,7 @@ const Filter = ({ iconBased }) => {
                 <div className={styles.menu}>
                     <div className={styles.filter_header}>
                         <div className={styles.filter_left}>
-                            <Image className={styles.filter_icon} src='/Filter.png' width={18} height={18} />
+                            <Image className={styles.filter_icon} src='/liter.png' width={18} height={18} />
                             <span className={styles.txt}>Filter by</span>
                         </div>
                         <Image onClick={handleOpen} className={styles.close_icon} src='/Close.png' width={16} height={16} />

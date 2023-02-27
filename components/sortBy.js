@@ -18,7 +18,7 @@ const SortBy = ({ iconBased }) => {
                 <div className={styles.menu}>
                     <div className={styles.sort_header}>
                         <div className={styles.sort_left}>
-                            <Image className={styles.sort_icon} src='/Sort By.png' width={18} height={18} />
+                            <Image className={styles.sort_icon} src='/Sort by.png' width={18} height={18} />
                             <span className={styles.txt}>Sort by</span>
                         </div>
                         <Image onClick={handleOpen} className={styles.close_icon} src='/Close.png' width={16} height={16} />
