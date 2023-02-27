@@ -21,12 +21,12 @@ const Views = () => {
     return (
         <div className="dropdown">
             {mOpen && <Modal onClose={handleModal} />}
-            <Button onClick={handleOpen} color="#FFFFFF" icon="/Save.png" text='Views' width='81px' height='36px' iconWidth='16px' iconHeight='16px' />
+            <Button onClick={handleOpen} color="#FFFFFF" icon="/save.png" text='Views' width='81px' height='36px' iconWidth='16px' iconHeight='16px' />
             {open ? (
                 <div className={styles.views}>
                     <div className={styles.views_header}>
                         <div className={styles.sort_left}>
-                            <Image className={styles.sort_icon} src='/Save.png' width={18} height={18} />
+                            <Image className={styles.sort_icon} src='/save.png' width={18} height={18} />
                             <span className={styles.txt}>Views</span>
                         </div>
                         <Image onClick={handleOpen} className={styles.close_icon} src='/Close.png' width={16} height={16} />
